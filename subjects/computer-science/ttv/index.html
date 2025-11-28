@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduVision Computer Science - Text to Animation">
+  <title>Computer Science Text → Animation — EduVision</title>
+  <link rel="stylesheet" href="../../../shared/styles/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-back" aria-label="Back to Computer Science">
+        <span aria-hidden="true">←</span> Back
+      </a>
+      <h1 class="nav-title">Computer Science Text → Animation</h1>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Input Section -->
+    <section class="input-section" id="input-section">
+      <div class="input-container">
+        <label for="topic-input" class="input-label">Enter Computer Science Topic</label>
+        <input 
+          type="text" 
+          id="topic-input" 
+          class="topic-input" 
+          placeholder="e.g., Data Structures, Algorithms, Machine Learning, Networks..."
+          aria-label="Topic input"
+        />
+        <button id="generate-btn" class="btn-generate" data-accent="cs">
+          Generate Animation
+        </button>
+      </div>
+    </section>
+
+    <!-- Animation Preview Section -->
+    <section class="preview-section" id="preview-section" style="display: none;">
+      <div class="preview-container">
+        <!-- Animation Video -->
+        <div class="animation-panel">
+          <h2>Animation Preview</h2>
+          <div class="video-container">
+            <video id="animation-video" controls autoplay>
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-placeholder" id="video-placeholder">
+              <p>Rendering animation...</p>
+              <div class="render-progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary Panel -->
+        <div class="summary-panel">
+          <h2>Summary</h2>
+          <div class="summary-content" id="summary-content"></div>
+          <audio id="audio-player" controls style="width: 100%; margin-top: 1rem; display: none;"></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section" id="quiz-section" style="display: none;">
+      <h2>Test Your Understanding</h2>
+      <div class="quiz-container" id="quiz-container">
+        <!-- MCQ questions will be rendered here -->
+      </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay" style="display: none;">
+      <div class="loader"></div>
+      <p>Generating animation and content...</p>
+    </div>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

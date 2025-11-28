@@ -1,0 +1,17 @@
+flask>=3.0.0
+flask-cors>=4.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+# Note: mediapipe requires Python 3.9-3.12 (not 3.13+)
+# Install with: py -3.10 -m pip install mediapipe>=0.10.0
+# Or use Python 3.10/3.11/3.12 for the backend server
+mediapipe>=0.10.0
+# TTA (Text to Animation) dependencies
+openai>=2.0.0
+gtts>=2.5.0
+pygame>=2.6.0
+manim>=0.18.0
+# Note: playsound doesn't work on Python 3.13+, so we use pygame as alternative for audio playback
+# pygame is used as a fallback when playsound is not available
+# Manim is required for rendering animations from generated code
+

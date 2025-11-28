@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/1185818338_1146303369_223132457.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_1754310298_4262629214.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_1409950635_3774460742.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_3414808756_1174190172.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_1754310298_63739830.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_3297100155_1326243010.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_1754310298_3361079266.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_1829964756_3799551450.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_1754310298_2049891895.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_680711064_1712545980.mp4'
+file 'file:C:/Users/Bhavitha/Eduvision/media/videos/show_matrix/480p15/partial_movie_files/AutoTeach/624642324_1754310298_3196764103.mp4'

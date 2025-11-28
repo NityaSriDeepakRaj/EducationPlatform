@@ -1,0 +1,53 @@
+<!--
+  EduVision — Interactive Learning Lab
+  Landing page for subject selection
+  
+  Instructions:
+  - Open index.html in a browser (serve via static server recommended for ES modules)
+  - For local development: python -m http.server 8000 or npx http-server
+  - Navigate to http://localhost:8000
+  
+  This is a vanilla HTML/CSS/JS frontend ready for backend integration.
+  See README.md for full documentation.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduVision - Interactive Learning Lab for Chemistry, Physics, Computer Science, and Mathematics">
+  <title>EduVision — Choose a Subject</title>
+  <link rel="stylesheet" href="shared/styles/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="EduVision Home">
+        <h1>EduVision</h1>
+      </a>
+      <div class="nav-actions">
+        <a href="#ask-question" class="nav-btn" aria-label="Ask a Question">Ask a Question</a>
+        <a href="#interactive-lab" class="nav-btn nav-btn-primary" aria-label="Interactive Lab">Interactive Lab</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header class="page-header">
+      <h2 class="headline">Choose a Subject</h2>
+      <p class="subheadline">Explore interactive learning experiences across four core subjects</p>
+    </header>
+
+    <!-- Subject Cards Grid -->
+    <section class="subjects-grid" role="region" aria-label="Subject selection">
+      <!-- Cards will be inserted here by script.js -->
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+

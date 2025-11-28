@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduVision Physics - Interactive Learning and Text to Animation">
+  <title>Physics — EduVision</title>
+  <link rel="stylesheet" href="../../shared/styles/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../../index.html" class="nav-back" aria-label="Back to home">
+        <span aria-hidden="true">←</span> Back
+      </a>
+      <h1 class="nav-title">Physics</h1>
+      <div class="nav-actions">
+        <button class="nav-btn nav-btn-secondary" id="gesture-guide-btn" aria-label="Show gesture guide">
+          Gesture Guide
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Topic Input Section -->
+    <section class="topic-input-section" role="region" aria-label="Topic input">
+      <div class="topic-input-container">
+        <label for="topic-input" class="topic-label">Enter Physics Topic</label>
+        <div class="input-group">
+          <input 
+            type="text" 
+            id="topic-input" 
+            class="topic-input" 
+            placeholder="e.g., Newton's Laws of Motion, Electromagnetic Waves, Quantum Mechanics..."
+            aria-label="Topic input"
+          />
+          <button id="generate-btn" class="generate-btn" data-accent="physics">
+            Generate
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Action Buttons -->
+    <section class="action-buttons" role="region" aria-label="Primary actions">
+      <a href="interactive/" class="action-btn action-btn-primary" data-accent="physics">
+        <span class="btn-icon">⚛️</span>
+        <span class="btn-text">
+          <strong>Interactive Learning</strong>
+          <small>Gesture-controlled simulations</small>
+        </span>
+      </a>
+    </section>
+
+    <!-- Preview Panel -->
+    <section class="preview-section" role="region" aria-label="Preview and scene breakdown">
+      <div class="preview-container">
+        <div class="preview-panel">
+          <div class="preview-header">
+            <h2>Animation Preview</h2>
+            <div class="preview-controls">
+              <button class="control-btn" aria-label="Play animation">▶</button>
+              <button class="control-btn" aria-label="Pause animation">⏸</button>
+              <button class="control-btn" aria-label="Reset animation">↻</button>
+            </div>
+          </div>
+          <div class="preview-canvas" id="preview-canvas" role="img" aria-label="Animation canvas">
+            <div class="canvas-placeholder">
+              <p>Animation canvas will appear here</p>
+              <small>Ready for gesture control integration</small>
+            </div>
+          </div>
+        </div>
+
+        <aside class="scene-breakdown" role="complementary" aria-label="Scene breakdown">
+          <div class="breakdown-header">
+            <h3>Scene Breakdown</h3>
+            <button class="collapse-btn" aria-label="Collapse scene breakdown" aria-expanded="true">−</button>
+          </div>
+          <div class="breakdown-content" id="breakdown-content">
+            <div class="breakdown-item">
+              <strong>Subject:</strong> Physics
+            </div>
+            <div class="breakdown-item">
+              <strong>Mode:</strong> Interactive Learning
+            </div>
+            <div class="breakdown-item">
+              <strong>Status:</strong> Ready
+            </div>
+            <details class="breakdown-details">
+              <summary>Scene Data</summary>
+              <pre class="breakdown-json">{
+  "subject": "physics",
+  "type": "interactive",
+  "components": [],
+  "gestures": {
+    "left_hand": "angle_control",
+    "right_hand": "velocity_control"
+  }
+}</pre>
+            </details>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+

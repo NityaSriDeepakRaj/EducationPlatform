@@ -1,0 +1,294 @@
+/* Chemistry TTV Styles - Same structure with chemistry accent */
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.input-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.input-container {
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur-md);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.input-label {
+  display: block;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.topic-input {
+  width: 100%;
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-lg);
+  transition: all var(--transition-base);
+}
+
+.topic-input:focus {
+  outline: none;
+  border-color: var(--chemistry);
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.3);
+}
+
+.btn-generate {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: linear-gradient(135deg, 
+    rgba(0, 255, 170, 0.3) 0%, 
+    rgba(0, 255, 170, 0.1) 100%);
+  border: 2px solid var(--chemistry);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.btn-generate:hover {
+  background: linear-gradient(135deg, 
+    rgba(0, 255, 170, 0.5) 0%, 
+    rgba(0, 255, 170, 0.3) 100%);
+  box-shadow: 0 0 30px rgba(0, 255, 170, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-generate:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Preview Section */
+.preview-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.preview-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+  .preview-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.animation-panel,
+.summary-panel {
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur-md);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.animation-panel h2,
+.summary-panel h2 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+  color: var(--chemistry);
+  font-size: var(--font-size-xl);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+#animation-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.render-progress {
+  width: 80%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  margin-top: var(--spacing-md);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--chemistry);
+  width: 0%;
+  animation: progress 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+  0%, 100% { width: 0%; }
+  50% { width: 70%; }
+}
+
+.summary-content {
+  color: var(--text-primary);
+  line-height: 1.8;
+  white-space: pre-wrap;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Quiz Section */
+.quiz-section {
+  margin-top: var(--spacing-xl);
+}
+
+.quiz-section h2 {
+  color: var(--chemistry);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.quiz-container {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.quiz-question {
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur-md);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.question-text {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.options-container {
+  display: grid;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.option-btn {
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.option-btn:hover:not(:disabled) {
+  background: rgba(0, 255, 170, 0.1);
+  border-color: var(--chemistry);
+  transform: translateX(4px);
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.option-btn.correct {
+  background: rgba(0, 255, 0, 0.2);
+  border-color: #00ff00;
+  color: #00ff00;
+}
+
+.option-btn.incorrect {
+  background: rgba(255, 0, 0, 0.2);
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.answer-feedback {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  display: none;
+}
+
+.answer-feedback.correct {
+  background: rgba(0, 255, 0, 0.1);
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+
+.answer-feedback.incorrect {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.answer-feedback.show {
+  display: block;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: var(--text-primary);
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(0, 255, 170, 0.3);
+  border-top-color: var(--chemistry);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: var(--spacing-md);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
